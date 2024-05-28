@@ -22,7 +22,7 @@ This program processes an input file containing people's names, outputs some sta
      ```bash
      node index.js
      ```
-   - The result will be displayed in the console.
+   - The result will be displayed in an output file called output.txt
 
 ## Example
 
