@@ -1,0 +1,54 @@
+Unique full name count: 48418
+Unique first name count: 3006
+Unique last name count: 468
+
+Top 10 last names:
+Barton: 143
+Lang: 136
+Ortiz: 135
+Hilll: 134
+Hills: 130
+Terry: 129
+Becker: 128
+Johns: 128
+Romaguera: 128
+Batz: 127
+
+Top 10 first names:
+Tara: 32
+Andreanne: 31
+Stephania: 31
+Keon: 31
+Kaycee: 30
+Milo: 29
+Charlotte: 29
+Kayley: 29
+Dashawn: 29
+Heath: 29
+
+Modified unique names:
+Graham, Mckenna
+Marvin, Garfield
+McLaughlin, Mariah
+Lang, Agustina
+Bradtke, Nikko
+Adams, Luis
+Lehner, Matilde
+Ortiz, Anita
+Koch, Berry
+Cartwright, Nicolas
+Fisher, Elmo
+Kunze, Gertrude
+Stanton, Davin
+Runolfsdottir, Roy
+Rogahn, Colby
+Tromp, Ryley
+Hoppe, Stanley
+Shanahan, Bethel
+Hills, Samanta
+McGlynn, Thad
+Lynch, Norma
+Bahringer, Lennie
+Tillman, Madison
+Stoltenberg, Donna
+Dickinson, Sonya

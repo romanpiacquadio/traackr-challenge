@@ -48,7 +48,7 @@ const getNamesFromFile = async (file, N=25) => {
 
     const topFirstNames = getTopNames(firstNames, 10);
   
-    return {
+    const result = {
       uniqueFullNamesCount: Object.keys(fullNames).length,
       uniqueLastNamesCount: Object.keys(lastNames).length,
       uniqueFirstNamesCount: Object.keys(firstNames).length,
@@ -56,6 +56,29 @@ const getNamesFromFile = async (file, N=25) => {
       topTenFirstNames: topFirstNames,
       modifiedNames,
     }
+
+    let output = `Unique full name count: ${result.uniqueFullNamesCount}\n`;
+    output += `Unique first name count: ${result.uniqueFirstNamesCount}\n`;
+    output += `Unique last name count: ${result.uniqueLastNamesCount}\n\n`;
+
+    output += `Top 10 last names:\n`;
+    result.topTenLastNames.forEach(name => {
+      output += `${name.name}: ${name.count}\n`;
+    });
+
+    output += `\nTop 10 first names:\n`;
+    result.topTenFirstNames.forEach(name => {
+      output += `${name.name}: ${name.count}\n`;
+    });
+
+    output += `\nModified unique names:\n`;
+    result.modifiedNames.forEach(name => {
+      output += `${name}\n`;
+    });
+
+    await fs.writeFile('output.txt', output);
+
+    console.log('Output written to output.txt');
   } catch (error) {
     console.log(error)
   }
