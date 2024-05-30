@@ -2,42 +2,43 @@
 
 ## Description
 
-This program processes an input file containing people's names, outputs some statistics, and generates an updated output.
+This program processes an input file containing people's names, and generates and output file with the statistics.
 
 ## Instructions
 
-1. **Unzip the Archive**
-   - Unzip the provided `.rar` file into your desired destination folder.
+1. **Install Dependencies**
+   - Run `npm install` in your terminal to install the required dependencies.
 
-2. **Add the Input File**
+2. **Update the Configuration**
    - Place the file to be processed inside the unzipped folder.
-   - Edit the `index.js` file to invoke the `getNamesFromFile` function with the name of the file you want to process.
+   - Open the `package.json` file.
+   - Modify the `start` script to specify the input file and the amount of modified names.
+   - For example:
+      `"start": "node processNames.js coding-test-data.txt 25"`
+   - If the amount of modified names is not provided, it defaults to 25.
 
-3. **Set the Amount of Modified Names**
-   - Edit the `index.js` file to invoke the `getNamesFromFile` function with the amount of modified names. If not provided, the number will be defaulted to 25.
+3. **Run the program**
+   - Open a terminal and execute the following command:
+      `npm start`
+   - The result will be displayed in an output file called `output.txt`
 
-4. **Run the Program**
-   - Open a terminal and navigate to the unzipped folder.
-   - Execute the program with the following command:
-     ```bash
-     node index.js
-     ```
-   - The result will be displayed in an output file called output.txt
 
 ## Example
 
-Modify `index.js` to call `getNamesFromFile` with the correct filename and the correct amount of modified names:
+Modify the `start` script in `package.json` to specify the input file and the amount of modified names:
 
-```javascript
-const getNamesFromFile = require('./getNamesFromFile');
-
-getNamesFromFile('coding-test-data.txt', 20);
+`"start": "node processNames.js coding-test-data.txt 20"`
 
 Then, run the program:
 
-node index.js
+`npm start`
 
+## Running Tests
+
+To run the tests, execute the following command in your terminal:
+
+`npm test`
 
 ## Additional Notes
 
-- Ensure Node.js is installed on your system.
+- Make sure Node.js is installed on your system.

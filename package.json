@@ -1,0 +1,12 @@
+{
+  "name": "traackr-challenge",
+  "version": "1.0.0",
+  "description": "This program processes an input file containing people's names, outputs some statistics, and generates an updated output.",
+  "main": "processNames.js",
+  "scripts": {
+    "start": "node processNames.js coding-test-data.txt 25",
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC"
+}
