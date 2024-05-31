@@ -108,10 +108,16 @@ const getNamesFromFile = async (file, N=25) => {
   }
 };
 
-const args = process.argv.slice(2);
-const fileName = args[0];
-const nameCount = parseInt(args[1], 10) || 25;
+if (require.main === module) {
+  const args = process.argv.slice(2);
+  const fileName = args[0];
+  const nameCount = parseInt(args[1], 10) || 25;
 
-getNamesFromFile(fileName, nameCount);
+  if (fileName) {
+    getNamesFromFile(fileName, nameCount);
+  } else {
+    console.error('No file path provided in command line arguments');
+  }
+}
 
 module.exports = {getNamesFromFile};
